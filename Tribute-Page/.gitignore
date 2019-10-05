@@ -1,3 +1,4 @@
 # Don't track files
 
-info.txt
+*.txt
+
