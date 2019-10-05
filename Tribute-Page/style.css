@@ -1,10 +1,11 @@
 
 
 #main {
-    display: block;
-    padding: 0.5vmin 30vmin 0px 30vmin;
-    display: block;
-    height: auto;
+    
+
+}
+body {
+    text-align: center;
 }
 
 /*
@@ -15,14 +16,18 @@
 */
 
 h1 {
+    padding: 0vmin 30vmin 0px 30vmin;
+    height: auto;
     font-family: 'Fira Sans', monospace;
-    font-size: 10vmax;
+    font-size: 9vmax;
 }   
 p {
-    width: 80vw;
+    text-justify: distribute-all-lines;
+    padding: 10px 40vmin 0px 40vmin;
 }
 img {
-    max-width: 80%;
+    padding: 0vmin 30vmin 0px 30vmin;
+    max-width: 40%;
     display: block;
     height: auto;           
 }         
