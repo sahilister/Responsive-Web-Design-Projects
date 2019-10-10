@@ -1,23 +1,18 @@
+html,body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
 #main {
     
 
 }
-#imgg{
-    position:absolute;
-    top:30%;
-}
-body {
-    
-    background: url("");
-    display:flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-}
-#row{
-    display: flex;
-    flex-direction: row;
-}
 
+
+
+.brand{
+    margin-top: 10%; 
+}
 .back{
     text-align: center;
     width: 60%;
@@ -50,6 +45,7 @@ h3 {
 }
 p {
     text-align: justify;
+    line-height: 1.3em;
 }
 ul {
     
@@ -59,10 +55,22 @@ ol {
 }
 
 img {
-   
-    max-width: 300%;
-    display: block;
-    height: auto;           
+    height: auto;
+   max-height: 300px;
+   width: auto;
+   max-width: 200px;
+   margin: 5%;
+
 }         
 
+50%;
+.same-pal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-flow: row;
+    flex-grow: 1;
 
+}
