@@ -56,14 +56,14 @@ ol {
 
 img {
     height: auto;
-   max-height: 300px;
+   max-height: 200px;
    width: auto;
    max-width: 200px;
    margin: 5%;
 
 }         
 
-50%;
+
 .same-pal{
     display: flex;
     flex-direction: row;
