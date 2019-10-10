@@ -1,0 +1,48 @@
+<html> 
+    <head>
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id = "title">Survey Form</h1>
+        <p id = "description">Student Information</p>
+        <form id = "survey-form">
+            <fieldset>
+                <label id = "name-label">
+                    Name: <input type = "text" id = "name" placeholder="Enter Name">
+                </label>
+                <br>
+                <label id = "email-label">
+                    Email: <input type = "url" id = "email" placeholder = "Enter Email" required>
+                </label>
+                <br>
+                <label id = "number-label">
+                    Age: <input type = "number" id = "range"  min = "1" max = "100" placeholder="Enter Age" required>
+                </label>
+                <br>
+                <label id = "dropdown-label">
+                    Favourite Subject: 
+                    <select type = "dropdown" id = "dropdown">
+                    <option type = "" name = "fav-sub">English </option>
+                    <option type = "radio" name = "fav-sub">Hindi </option>
+                    <option type = "radio" name = "fav-sub">Mathematics </option>
+                    <option type = "radio" name = "fav-sub">Science </option>
+                    <option type = "radio" name = "fav-sub">Social Science </option>
+                    <option type = "radio" name = "fav-sub">Sanskrit </option>
+                    </select>
+                </label>
+                <br>
+                <label id = "hobbies">
+                    Hobbies:
+                    <input type = "radio" name = "reading" >Reading
+                    <input type = "radio" name = "runnig"> Running
+                    <input type = "radio" name = "hiking"> Hiking
+                    <input type = "radio" name = "driving"> Driving
+                </label>
+
+
+
+
+            </fieldset>
+        </form>
+    </body>
+</html>
