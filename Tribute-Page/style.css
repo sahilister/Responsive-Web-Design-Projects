@@ -1,35 +1,68 @@
-
-/*
 #main {
     
 
 }
+#imgg{
+    position:absolute;
+    top:30%;
+}
 body {
+    
+    background: url("");
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+#row{
+    display: flex;
+    flex-direction: row;
+}
+
+.back{
     text-align: center;
+    width: 60%;
+    margin: auto;
+    padding: 0px 10vmax 0px 10vmax;
+    text-align: justify;
+    
+    
 }
-
-
-.back-img{
-    background: url("https://i.postimg.cc/sDZfwfQ3/Firefox-wallpaper.png");
-    opacity: 0.5;
+.timeline {
+    padding: 0px 5vmax 0px 5vmax;
 }
+.italic {
+    padding: 0px 5.5vmax 0px 5.5vmax;
 
+}
 
 h1 {
-    padding: 0vmin 30vmin 0px 30vmin;
     height: auto;
     font-family: 'Fira Sans', monospace;
-    font-size: 9vmax;
+    font-size: 8vmax;
+    text-align: center;
 }   
-p {
-    text-justify: distribute-all-lines;
-    padding: 10px 40vmin 0px 40vmin;
+h2 {
+    text-align: center;
+
 }
+h3 {
+    
+}
+p {
+    text-align: justify;
+}
+ul {
+    
+}
+ol {
+    text-align: left;
+}
+
 img {
-    padding: 0vmin 30vmin 0px 30vmin;
-    max-width: 40%;
+   
+    max-width: 300%;
     display: block;
     height: auto;           
 }         
 
-*/
+
