@@ -1,29 +1,24 @@
 <html> 
     <head>
         <title>Survey Form</title>
-        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1 id = "title">Survey Form</h1>
         <p id = "description">Student Information</p>
         <form id = "survey-form">
             <fieldset>
-                <div>
                 <label id = "name-label">
                     Name: <input type = "text" id = "name" placeholder="Enter Name">
                 </label>
-                </div>>
-                <div>
+                <br>
                 <label id = "email-label">
                     Email: <input type = "url" id = "email" placeholder = "Enter Email" required>
                 </label>
-                </div>
-                <div>
+                <br>
                 <label id = "number-label">
                     Age: <input type = "number" id = "range"  min = "1" max = "100" placeholder="Enter Age" required>
                 </label>
-                </div>
-                <div>
+                <br>
                 <label id = "dropdown-label">
                     Favourite Subject: 
                     <select type = "dropdown" id = "dropdown">
@@ -35,31 +30,20 @@
                     <option type = "radio" name = "fav-sub">Sanskrit </option>
                     </select>
                 </label>
-                </div>
-                <div>
+                <br>
                 <label id = "hobbies">
                     Hobbies:
-                    <input type = "radio" name = "hobbies" value = "reading">Reading
-                    <input type = "radio" name = "hobbies" value = "running"> Running
-                    <input type = "radio" name = "hobbies" value = "hiking"> Hiking
-                    <input type = "radio" name = "hobbies" value = "driving"> Driving
+                    <input type = "radio" name = "reading" >Reading
+                    <input type = "radio" name = "runnig"> Running
+                    <input type = "radio" name = "hiking"> Hiking
+                    <input type = "radio" name = "driving"> Driving
                 </label>
-                </div>
-                <div>
-                Tell Us About Yourself
-                <textarea></textarea>
-                </div>
-                <div>
-                <button type = "submit">
-                    Submit
-                </button>
-                </div>
-                
+
 
 
 
             </fieldset>
-            
         </form>
     </body>
 </html>
+
