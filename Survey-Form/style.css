@@ -1,7 +1,36 @@
 body {
     padding: 0px 20vmax 0px 20vmax;
+    display: block;
     text-align: center;
+    background: #f1f1f1;
 }
-div{
-    margin:10px;
+input {
+    height: 4px;
+    width: auto;;
+}
+.banner {
+    display: block;
+    background: white;
+    margin: 4px;
+}
+/* input {
+    margin: 2%;
+} */
+.left-row {
+    display: inline-block;  
+  text-align: right; 
+  width: 40%; 
+  padding: 5px; 
+  vertical-align: top; 
+  margin-top: 10px;
+  
+}
+.right-row {
+    display: inline-block;  
+    text-align: left; 
+    width: 40%; 
+    padding: 5px; 
+    vertical-align: top; 
+    margin-top: 10px;
+    
 }

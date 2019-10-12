@@ -2,30 +2,51 @@
     <head>
         <title>Survey Form</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </head>
     <body>
+        <div class = "banner">
         <h1 id = "title">Survey Form</h1>
-        <p id = "description">Student Information</p>
+        <h4><i><p id = "description">Student Information</p></i></h4>
+        </div>
         <form id = "survey-form">
             <fieldset>
                 <div>
                 <label id = "name-label">
-                    Name: <input type = "text" id = "name" placeholder="Enter Name">
+                    <div class = "left-row">
+                        Name: 
+                    </div>
+                    <div class = "right-row">
+                        <input type = "text" id = "name" placeholder="Enter Name" required>
+                    </div>
                 </label>
                 </div>
                 <div>
                 <label id = "email-label">
-                    Email: <input type = "url" id = "email" placeholder = "Enter Email" required>
+                    <div class = "left-row">
+                        Email:
+                    </div>
+                    <div class = "right-row">
+                    <input type = "email" id = "email" placeholder = "Enter Email" required>
+                    </div>
                 </label>
                 </div>
                 <div>
                 <label id = "number-label">
-                    Age: <input type = "number" id = "range"  min = "1" max = "100" placeholder="Enter Age" required>
+                    <div class = "left-row">
+                        Age: 
+                    </div>
+                    <div class = "right-row">
+                    <input type = "number" id = "range"  min = "1" max = "100" placeholder="Enter Age" required>
+                    </div>
                 </label>
                 </div>
                 <div>
                 <label id = "dropdown-label">
-                    Favourite Subject: 
+                    <div class = "left-row">
+                        Favourite Subject: 
+                    </div>
+                    <div class = "right-row">
                     <select type = "dropdown" id = "dropdown">
                     <option type = "" name = "fav-sub">English </option>
                     <option type = "radio" name = "fav-sub">Hindi </option>
@@ -34,30 +55,39 @@
                     <option type = "radio" name = "fav-sub">Social Science </option>
                     <option type = "radio" name = "fav-sub">Sanskrit </option>
                     </select>
+                    </div>
                 </label>
                 </div>
                 <div>
                 <label id = "hobbies">
-                    Hobbies:
-                    <input type = "radio" name = "hobbies" value = "reading">Reading
+                    <div class = "left-row">
+                        Hobbies:
+                    </div>
+                    <div class = "right-row">
+                    <input type = "radio" name = "hobbies" value = "reading"> Reading
+                    <br>
                     <input type = "radio" name = "hobbies" value = "running"> Running
+                    <br>
                     <input type = "radio" name = "hobbies" value = "hiking"> Hiking
+                    <br>
                     <input type = "radio" name = "hobbies" value = "driving"> Driving
+                    </div>
                 </label>
                 </div>
                 <div>
+                <div class = "left-row">
                 Tell Us About Yourself
-                <textarea></textarea>
                 </div>
+                <div class = "right-row">
+                <textarea row="4" cols="30"></textarea>
+                </div>
+                </div>
+                <br>
                 <div>
                 <button type = "submit">
                     Submit
                 </button>
                 </div>
-                
-
-
-
             </fieldset>
             
         </form>
