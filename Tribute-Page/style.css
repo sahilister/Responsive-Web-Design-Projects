@@ -1,61 +1,44 @@
-html,body{
+body{
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5;
 }
-
-
 .brand{
     margin-top: 10%; 
 }
-.same-pal{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    flex-flow: row;
-    flex-grow: 1;
-
-}
-
 
 .back{
     text-align: center;
-    width: 60%;
     margin: auto;
-    padding: 0px 10vmax 0px 10vmax;
     text-align: justify;
-    
-    
 }
 .timeline {
     padding: 0px 5vmax 0px 5vmax;
+    background-color: white;
 }
 .italic {
     padding: 0px 5.5vmax 0px 5.5vmax;
-
 }
 
 h1 {
     height: auto;
     font-family: 'Fira Sans', monospace;
-    font-size: 8vmax;
+    font-size: 7vmax;
     text-align: center;
 }   
 h2 {
     text-align: center;
     font-size: 2em;
-
 }
 h3 {
     font-size: 1.5em;
 }
-.same-pal p {
+/* .same-pal p {
     text-align: justify;
     line-height: 1.5em;
     font-size: 1.4em;
-}
+} */
 
 ol {
     text-align: left;
@@ -70,17 +53,39 @@ li p{
 }
 
 img {
-    height: auto;
-   max-height: 400px;
-   width: auto;
-   max-width: 400px;
-   margin: 5%;
-   margin-left: 40%;
-
-
+    display: block;
+    height: 50%;
+   max-width: auto;
+   align-content: center;
+   margin-left: auto;
+   margin-right: auto;
+   
 }        
 #img-caption {
-    margin-left: 40%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    text-align: center;
 } 
+
+/* .left-row {
+    display: inline-block;  
+  text-align: justify; 
+  width: 60%; 
+  vertical-align: top; 
+  margin-top: 10px;
+
+}
+.right-row {
+    display: inline-block; 
+  align-content: center;
+  width : 30%; 
+  vertical-align: right;
+    padding-left: 3%;
+    height: auto;
+
+} */
+#tribute-info {
+    font-size: 2.5vh;
+}
 
 
