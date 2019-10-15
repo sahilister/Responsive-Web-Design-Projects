@@ -1,6 +1,15 @@
+@media (min-height: 400px){
+
+}
+
+body {
+    display: block;
+    margin: auto;
+    align: center;
+}
+
 img {
     display: block;
     height: 10%;
     width: auto;
-    
 }
