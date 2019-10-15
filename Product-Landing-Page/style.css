@@ -1,15 +1,33 @@
 @media (min-height: 400px){
 
 }
-
-body {
+body{
+    background-color: aliceblue;
+}
+.block {
     display: block;
     margin: auto;
-    align: center;
+    text-align: center;
+    padding: 2vmax 20vmax 0px 20vmax;
+    
+}
+
+div, form {
+    margin: 15px;
+}
+h2 {
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 img {
     display: block;
     height: 10%;
     width: auto;
+}
+
+#video {
+    margin: auto%;
+}
+-nabbar-link {
+    display: flex;
 }
