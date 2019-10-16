@@ -1,17 +1,32 @@
-@media (min-height: 400px){
-
-}
-body{
+@media(max-width:600px){
+    body {
+       font-size:2rem;
+     }
+   }
+html{
     background-color: aliceblue;
+    
 }
 .block {
     display: block;
-    margin: auto;
     text-align: center;
-    padding: 2vmax 20vmax 0px 20vmax;
+    padding: 5vmax 10vmax 2px 10vmax; 
+/*     background-color: aquamarine; */
+    
     
 }
-
+#logo {
+        float:left;
+        position:fixed;
+        display:block;
+        margin:;
+          padding:;
+}
+ #nav-bar {
+    background-color: yellow;
+    margin: 10px;
+    flex-wrap: wrap;
+} 
 div, form {
     margin: 15px;
 }
@@ -28,6 +43,18 @@ img {
 #video {
     margin: auto%;
 }
+#video, div, form {
+/*     background-color: aqua; */
+}
 -nabbar-link {
     display: flex;
+}
+#originals {
+    text-align: left;
+}
+#faq {
+    text-align: center;
+}
+#pricing {
+    text-align: right;
 }
