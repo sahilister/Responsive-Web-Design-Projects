@@ -4,36 +4,45 @@
             Netflix
         </title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </head>
     <body>
         <div class="block">
         <header id="header">
             
-            <img src="N-icon.png" id="logo">
-            <h2>Netflix! Theater at Home</h2>
+            <img src="N-icon.png" class="logo" id="header-img">
+            <h2>Netflix</h2>
             <nav id="nav-bar">
-                <a href="https://www.netflix.com/in/browse/genre/839338" target="_blank" class="nav-link" id="orginals">Originals</a>
+                <a href="#one" target="_blank" class="nav-link" id="orginals">Originals</a>
             
-                <a href="https://help.netflix.com/en/node/412" target="_blank" class="nav-link" id="faq">FAQ</a>
+                <a href="#two" target="_blank" class="nav-link" id="faq">FAQ</a>
             
-                <a href="https://www.netflix.com/signup/planform" target="_blank"  class="nav-link" id="pricing">Pricing</a>
+                <a href="#three" target="_blank"  class="nav-link" id="pricing">Pricing</a>
             </nav>
         </header>
         <div>
                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XM0xWpBYlNM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" id="video" allowfullscreen></iframe>
             
         </div>
-        <form id="form">
-            <div id="email">
-                Subsribe to Newsletter
-                <br>
-                <input type="email" placeholder="Enter Email" required>  
-                <button id="submit" action="https://www.freecodecamp.com/email-submit">Submit</button>
-
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <input id="submit" type="submit" value="Get Started" class="btn" />
+    </form>
+                
 
             </div>
         </form>
         </div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+
         <div class="out"></div>
     </body>
 </html>

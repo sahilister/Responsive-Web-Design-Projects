@@ -15,9 +15,9 @@ html{
     
     
 }
-#logo {
+.logo {
         float:left;
-        position:fixed;
+       
         display:block;
         margin:;
           padding:;
@@ -26,6 +26,10 @@ html{
     background-color: yellow;
     margin: 10px;
     flex-wrap: wrap;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
 } 
 div, form {
     margin: 15px;
