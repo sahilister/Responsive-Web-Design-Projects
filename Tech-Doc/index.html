@@ -1,0 +1,252 @@
+<html>
+    <head>
+        <title>JS Documentation</title>
+    </head>
+    <body>
+        <main id="main-doc">
+            <section class="main-section">
+                <article>
+                <header id="introduction"><b>Introduction</b></header>
+                    <p>
+                        JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g. having complex animations, clickable buttons, popup menus, etc.).  There are also more advanced server side versions of JavaScript such as Node.Js which allow you to add more functionality to a website than simply downloading files (such as realtime collaboration between multiple computers). Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+                    <p>
+                        JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+                        <ul>
+                            <li>
+                                Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.
+                            </li>
+                            <li>
+                                 Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        This means that in the browser, JavaScript can change the way the webpage (DOM) looks. And, likewise, Node.js JavaScript on the server can respond to custom requests from code written in the browser.
+                    </p>
+            </section>
+
+            <section class="main-section">
+                        <header id="java_and_javascript"><b>Java and JavaScript</b></header>
+                        <p>
+                            JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
+                        </p>
+                        <p>
+                            In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.
+                        </p>
+                        <p>
+                            JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.
+                        </p>
+                        <p>
+                            Java is a class-based programming language designed for fast execution and type safety. Type safety means, for instance, that you can't cast a Java integer into an object reference or access private memory by corrupting Java bytecodes. Java's class-based model means that programs consist exclusively of classes and their methods. Java's class inheritance and strong typing generally require tightly coupled object hierarchies. These requirements make Java programming more complex than JavaScript programming.
+                        </p>
+                        <p>        
+                            In contrast, JavaScript descends in spirit from a line of smaller, dynamically typed languages such as HyperTalk and dBASE. These scripting languages offer programming tools to a much wider audience because of their easier syntax, specialized built-in functionality, and minimal requirements for object creation.
+                        </p>
+            </section>
+            <section class="main-section">
+                        <header id="hello_world"><b>Hello World</b></header>
+                        <p>
+                            To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
+                        </p>
+                        <p>
+                            <code>
+                                    (function(){
+                                    <br>    "use strict";
+                                    <br>    /* Start of your code */
+                                    <br>    function greetMe(yourName) {
+                                    <br>      alert('Hello ' + yourName);
+                                    <br>    }
+                                    <br>    
+                                    <br>    greetMe('World');
+                                    <br>    /* End of your code */
+                                    <br>  })();
+                            </code>   
+                        </p>
+            </section>
+            <section class="main-section">
+                <article>
+                    <header id="variables"><b>Variables</b></header>
+                    <p>
+                        You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules. 
+                    </p>
+                    <p>
+                        A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
+                    </p>
+                    <p>
+                        Some examples of legal names are <i> Number_hits, temp99, $credit, and _name.</i>
+                    </p>
+            </section>
+            <section class="main-section">
+                <header id="declaring_variables"><b>Declaring variables</b></header>
+                <p>
+                    You can declare a variable in two ways: 
+                    <ul>
+                        <li>With the keyword <i> var </i>. For example,<i> var x = 42 </i>. This syntax can be used to declare both <b> local </b> and <b> global </b> variables, depending on the execution context.</li>
+                        <li>With the keyword <i> const </i> or <i> let </i>. For example, <i> let y = 13 </i>. This syntax can be used to declare a block-scope local variable.</li>
+                    </ul>
+                </p>
+            </section>
+            <section class="main-section">
+                <header id="variable_scope"><b>Variable Scope</b></header>
+                <p>
+                    When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.
+                </p>
+                <p>
+                    JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the global context (or the function if the following codes are part of the function), not the immediate if statement block.
+                </p>
+                <p>
+                    <code>
+                        if (true) {
+                        <br>        var x = 5;
+                        <br>      }
+                        <br>      console.log(x);  // x is 5
+                    </code>
+                </p>
+                <p>
+                    This behavior changes, when using the let declaration introduced in ECMAScript 2015.  
+                </p>
+                <p>
+                    <code>
+                            if (true) {
+                            <br>    let y = 5;
+                            <br>  }
+                            <br>  console.log(y);  // ReferenceError: y is not defined
+                    </code>
+                </p>
+            </section>
+            <section class="main-section">
+                <header id="global_variables"><b>Global variables</b></header>
+                <p>
+                    Global variables are in fact properties of the global object. In web pages, the global object is window, so you can set and access global variables using the <i> window.variable</i> syntax. 
+                </p>
+                <p>
+                    Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called  <i> phoneNumber </i> is declared in a document, you can refer to this variable from an iframe as <i> parent.phoneNumber </i>. 
+                </p>
+            </section>
+            <section class="main-section">
+                <header id="constants"><b>Constants</b></header>
+                <p>
+                    You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign ($) and can contain alphabetic, numeric, or underscore characters.
+                </p>
+                <p>
+                    <code>const PI = 3.14;</code>
+                </p>
+                <p>
+                    A constant cannot change value through assignment or be re-declared while the script is running. It must be initialized to a value.
+                </p>
+                <p>
+                    The scope rules for constants are the same as those for <i> let </i> block-scope variables. If the <i> const </i> keyword is omitted, the identifier is assumed to represent a variable. 
+                </p>
+            </section>
+            <section class="main-section">
+                <header id="data_types"><b>Data types</b></header>
+                <p>
+                    The latest ECMAScript standard defines eight data types:
+                    <ul>
+                        <li>Seven data types that are primitives:
+                            <ul>
+                                <li> <u> Boolean.</u> <i> true </i> and <i>false</i>. </li>
+                                <li> <u> null.</u> A special keyword denoting a null value. Because JavaScript is case-sensitive, <i> null</i> is not the same as <i> Null </i>, <i> NULL</i>, or any other variant.</li>
+                                <li><u>undefined.</u> A top-level property whose value is not defined.</li>
+                                <li><u>Number.</u> An integer or floating point number. For example: <i>42</i> or <i>3.14159</i>.</li>
+                                <li><u>BigInt.</u> An integer with arbitrary precision. For example:<i>9007199254740992n</i> .</li>
+                                <li><u>String.</u> A sequence of characters that represent a text value. For example: "Howdy"</li>
+                                <li><u>Symbol.</u> (new in ECMAScript 2015) A data type whose instances are unique and immutable.</li>
+                            </ul>
+                        </li>
+                        <li>and Object</li>
+                    </ul>  
+                </p>
+            </section>
+            <section class="main-section">
+                <header id="if_else"><b>if...else statement</b></header>
+                <p>
+                    Use the <i>if</i> statement to execute a statement if a logical condition is true. Use the optional <i>else</i> clause to execute a statement if the condition is false. An <i>if</i> statement looks as follows:
+                    <p>
+                    <code>
+                            if (condition) {
+                            <br>    statement_1;
+                            <br>  } else {
+                            <br>    statement_2;
+                            <br>  }  
+                    </code>
+                    </p>
+
+                </p>
+                </section>
+                <section class="main-section">
+                        <header id="switch"><b>switch statement</b></header>
+                        <p>
+                            A <i> switch </i> statement allows a program to evaluate an expression and attempt to match the expression's value to a case label. If a match is found, the program executes the associated statement. A <i> switch </i> statement looks as follows:
+                            <p>
+                                <p>
+                                    <code>
+                                            switch (expression) {
+                                            <br>    case label_1:
+                                            <br>       statements_1
+                                            <br>       [break;]
+                                            <br>     case label_2:
+                                            <br>       statements_2
+                                            <br>       [break;]
+                                            <br>       ...
+                                            <br>     default:
+                                            <br>       statements_def
+                                            <br>       [break;]
+                                            <br>   }
+                                              
+                                    </code>
+                                </p>
+                            </p>
+                        </p>
+                    </section>
+                    <section class="main-section">
+                            <header id="while_statement"><b>while statement</b></header>
+                            <p>
+                                A <i> while </i> statement executes its statements as long as a specified condition evaluates to true. A <i> while </i> statement looks as follows:
+                            </p>
+                            <p>
+                                <code>
+                                    while (condition)
+                                    <br>    statement
+                                </code>
+                            </p>
+                            <p>
+                                If the condition becomes false, <i> statement </i> within the loop stops executing and control passes to the statement following the loop.
+                            </p>
+                            <p>
+                                The condition test occurs before <i> statement </i> in the loop is executed. If the condition returns true, <i> statement </i> is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following <i> while </i>.    
+                            </p>
+                            <p>
+                                To execute multiple statements, use a block statement ({ ... }) to group those statements.
+                            </p>
+
+                        </section>
+                    <section class="main-section">
+                                <header id="Function declaration"><b>Function declaration</b></header>
+                                <p>
+                                    A function definition (also called a function declaration, or function statement) consists of the <i> function </i> keyword, followed by:
+                                    <ul>
+                                        <li>The name of the function.</li>
+                                        <li>A list of parameters to the function, enclosed in parentheses and separated by commas.</li>
+                                        <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.</li>
+                                    </ul>
+                                </p>
+                                <p>
+                                    For example, the following code defines a simple function named <i> square </i>:
+                                    <p>
+                                        <code>
+                                                function square(number) {
+                                                <br>    return number * number;
+                                                <br>  } 
+                                        </code>
+                                    </p>
+                                </p>
+                            </section>
+                            <section class="main-section">
+                                    <header id="reference"><b>Reference</b></header>
+                                    <p>All the Documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN web docs</a>.</p>
+                                </section>
+
+        </main>
+    </body>
+</html>
