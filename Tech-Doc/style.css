@@ -17,12 +17,30 @@ nav {
     border-right: solid;
     border-block: solid;
     background-color: #ffffff;
+    z-index: auto;
 }
-li {
-    border: #a9a9a9;
+#navbar ul {
+    height: 100%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
 
+    
 }
-
+#navbar li {
+    color: #a9a9a9;
+    border-top: 1px solid;
+    width: 100%;
+    list-style: none;
+    position: relative;
+    padding: 10px 30px;
+    display: block;
+}
+#navbar a{
+    text-decoration: none;
+    color: black;
+    
+}
 i{
     background-color: #a9a9a9;
 }
